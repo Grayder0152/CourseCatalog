@@ -1,1 +1,1 @@
-web:gunicorn CourseCatalog.wsgi
+web: gunicorn CourseCatalog.wsgi
