@@ -6,7 +6,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', default='sons4922ee-=-`zlq302x=36pr(p9nygs3st-yzzyip#i5j=lgba0je')
 DEBUG = os.environ.get('DEBUG', default=True)
 
-ALLOWED_HOSTS = ['localhost', 'coursecatalog-api.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'coursecatalog-api.herokuapp.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -81,6 +81,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-STATIC_URL = '/static/'
+STATIC_URL = '/staticfiles/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
