@@ -28,7 +28,7 @@ $ git clone https://github.com/Grayder0152/CourseCatalog.git
 ```
 2) Go to the root directory of the project and install requirements:
 ```
-$ pip install requirements.txt
+$ pip install -r requirements.txt
 ```
 3) You can use an existing database(`db.sqlite3`) in which there are several courses or delete it and Django will create a new empty one automatically.
 4) Then you have to make migrations
