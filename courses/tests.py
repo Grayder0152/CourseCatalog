@@ -9,6 +9,8 @@ from rest_framework.test import APITestCase
 
 
 class ModelTests(TestCase):
+    """Class for testing model"""
+
     def setUp(self):
         self.old_count_courses = Course.objects.count()
         self.course = Course(
@@ -38,6 +40,7 @@ class ModelTests(TestCase):
 
 
 class CourseAPITests(APITestCase):
+    """Class for testing API"""
 
     def setUp(self):
         self.list_url = reverse('courses_list')

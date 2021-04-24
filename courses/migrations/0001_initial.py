@@ -14,11 +14,21 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Course',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('title', models.CharField(max_length=120, verbose_name='Title')),
+                ('id', models.BigAutoField(
+                    auto_created=True,
+                    primary_key=True,
+                    serialize=False,
+                    verbose_name='ID'
+                )),
+                ('title', models.CharField(
+                    max_length=120,
+                    verbose_name='Title'
+                )),
                 ('date_start', models.DateField(verbose_name='Start date')),
                 ('date_end', models.DateField(verbose_name='End date')),
-                ('count_lectures', models.PositiveSmallIntegerField(verbose_name='Count lectures')),
+                ('count_lectures', models.PositiveSmallIntegerField(
+                    verbose_name='Count lectures'
+                )),
             ],
         ),
     ]
